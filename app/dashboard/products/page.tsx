@@ -1,5 +1,4 @@
 import { db } from "@/server";
-import { products } from "@/server/schema";
 import React from "react";
 import { DataTable } from "./data-table";
 import placeHolerImg from "@/public/istockphoto-1147544807-612x612.jpg";

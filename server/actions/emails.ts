@@ -3,7 +3,6 @@
 import DropboxResetPasswordEmail from "@/components/email-template";
 import { getBaseUrl } from "@/lib/get-baseUrl";
 import { Resend } from "resend";
-import { users } from "../schema";
 import { ResetPasswordEmail } from "@/components/password-email-template";
 import TwoFactorEmailTemplate from "@/components/twoFacto-email-template";
 // const resend = new Resend(process.env.RESEND_API_KEY);
