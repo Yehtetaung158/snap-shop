@@ -11,6 +11,6 @@ export default defineConfig({
   schema: "./server/schema.ts",
   out: "./server/migration",
   dbCredentials: {
-    url: process.env.DATABASE_URL!,
+    url: process.env.DRIZZLE_DATABASE_URL!,
   },
 });

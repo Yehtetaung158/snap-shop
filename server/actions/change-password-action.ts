@@ -14,7 +14,7 @@ export const changePassword = actionClient
   .schema(changePasswordSchema)
   .action(async ({ parsedInput: { password, token } }) => {
     const pool = new Pool({
-      connectionString:process.env.DATABASE_URL,
+      connectionString:process.env.DRIZZLE_DATABASE_URL,
     });
     const dbPool = drizzle(pool);
     try {
