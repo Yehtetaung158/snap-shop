@@ -14,8 +14,7 @@ export const changePassword = actionClient
   .schema(changePasswordSchema)
   .action(async ({ parsedInput: { password, token } }) => {
     const pool = new Pool({
-      connectionString:
-        "postgresql://snap-shop_owner:npg_ljZTM6hYRe7a@ep-sweet-flower-a8pmb61j-pooler.eastus2.azure.neon.tech/snap-shop?sslmode=require",
+      connectionString:process.env.DATABASE_URL,
     });
     const dbPool = drizzle(pool);
     try {
