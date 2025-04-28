@@ -37,16 +37,16 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import AppNav from "@/components/navitation/AppNav";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata: Metadata = {
   title: "Snap Shop",
@@ -60,7 +60,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" style={{ filter: "invert(0)" }} className="">
-      <body className={`${geistSans.variable} ${geistMono.variable} `}>
+      <body 
+      // className={`${geistSans.variable} ${geistMono.variable} `}
+      >
         <div className="antialiased max-w-7xl mx-auto px-6 lg:px-8">
           <AppNav />
 
