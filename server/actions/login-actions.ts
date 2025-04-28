@@ -85,13 +85,15 @@ export const login = actionClient
       return { success: "Logged in successfully" };
     } catch (error) {
       if (error instanceof AuthError) {
-        switch (error.type) {
-          case "CredentialsSignin": {
+        // TypeScript မှာ type ကို သိရှိစေရန် ထပ်မံအသိပေးခြင်း
+        const authError = error as { type?: string; message?: string };
+        switch (authError.type) {
+          case "CredentialsSignin":
             return { error: "Please provide valid credentials" };
-          }
-          case "OAuthSignInError": {
-            return { error: error.message };
-          }
+          case "OAuthSignInError":
+            return { error: authError.message || "OAuth sign in error" };
+          default:
+            return { error: authError.message || "Authentication failed" };
         }
       }
       throw error;
