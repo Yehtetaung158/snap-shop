@@ -3,7 +3,7 @@ import NextAuth from "next-auth";
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import Google from "next-auth/providers/google";
 import Github from "next-auth/providers/github";
-import { db } from "./index";
+import { db } from "@/server/index";
 import Credentials from "next-auth/providers/credentials";
 import { ZodError } from "zod";
 import { loginSchema } from "@/types/login-schema";
