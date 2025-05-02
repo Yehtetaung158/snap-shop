@@ -2,7 +2,7 @@
 
 import { loginSchema } from "@/types/login-schema";
 import { actionClient } from "./safe-action";
-import { db } from "..";
+import { db } from "@/server/index";
 import { eq } from "drizzle-orm";
 import { twoFactorToken, users } from "../schema";
 import {

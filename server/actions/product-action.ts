@@ -2,7 +2,7 @@
 
 import { actionClient } from "./safe-action";
 import { productSchema } from "@/types/product-schema";
-import { db } from "..";
+import { db } from "@/server/index";
 import { products } from "../schema";
 import { eq } from "drizzle-orm";
 import { z } from "zod";

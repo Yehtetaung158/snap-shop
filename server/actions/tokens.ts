@@ -1,7 +1,7 @@
 "use server";
 
 import { eq } from "drizzle-orm";
-import { db } from "..";
+import { db } from "@/server/index";
 import { emailVerificationToken, twoFactorToken, users } from "../schema";
 import { resetPasswordToken } from "../schema";
 import crypto from "crypto";

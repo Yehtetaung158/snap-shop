@@ -2,7 +2,7 @@
 
 import { passwordResetSchema } from "@/types/password-reset-schema";
 import { actionClient } from "./safe-action";
-import { db } from "@/server";
+import { db } from "@/server/index";
 import { eq } from "drizzle-orm";
 import { users } from "../schema";
 import { generatePasswordResetToken } from "./tokens";

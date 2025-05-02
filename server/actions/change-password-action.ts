@@ -3,7 +3,7 @@
 import { actionClient } from "./safe-action";
 import { changePasswordSchema } from "@/types/change-password-schema";
 import { checkPasswordResetTokenByToken } from "./tokens";
-import { db } from "..";
+import { db } from "@/server/index";
 import { eq } from "drizzle-orm";
 import { resetPasswordToken, users } from "../schema";
 import bcrypt from "bcrypt";

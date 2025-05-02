@@ -1,7 +1,7 @@
 import AddToCart from "@/components/cart/add-to-cart";
 import ImageSlider from "@/components/products/image-slider";
 import VariantPicker from "@/components/products/variantPicker";
-import { db } from "@/server";
+import { db } from "@/server/index";
 import { productVariants } from "@/server/schema";
 import { eq } from "drizzle-orm";
 import React from "react";

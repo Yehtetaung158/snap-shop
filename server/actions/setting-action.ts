@@ -2,7 +2,7 @@
 
 import { avatarUploadSchema, profileSchema } from "@/types/profile-schema";
 import { actionClient } from "./safe-action";
-import { db } from "..";
+import { db } from "@/server/index";
 import { users } from "../schema";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";

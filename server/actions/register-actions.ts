@@ -3,7 +3,7 @@
 import { registerSchema } from "@/types/register-schema";
 import { actionClient } from "./safe-action";
 import bcrypt from "bcrypt";
-import { db } from "..";
+import { db } from "@/server/index";
 import { eq, is } from "drizzle-orm";
 import { users } from "../schema";
 import { generateEmailValidationToken } from "./tokens";

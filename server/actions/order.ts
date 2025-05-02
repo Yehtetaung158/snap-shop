@@ -6,7 +6,7 @@ import { auth } from "../auth";
 import { orderProduct, orders } from "../schema";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
-import { db } from "..";
+import { db } from "../../server/index";
 
 export const createOrder = actionClient
   .schema(createOrderSchema)

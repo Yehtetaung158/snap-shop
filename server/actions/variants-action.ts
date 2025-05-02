@@ -1,7 +1,7 @@
 "use server";
 import { VariantSchema } from "@/types/varant-schema";
 import { actionClient } from "./safe-action";
-import { db } from "..";
+import { db } from "@/server/index";
 import { productVariants, variantImages, variantsTags } from "../schema";
 import { revalidatePath } from "next/cache";
 import { eq } from "drizzle-orm";

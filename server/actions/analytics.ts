@@ -1,7 +1,7 @@
 "use server";
 
 import { between, eq } from "drizzle-orm";
-import { db } from "..";
+import { db } from "@/server/index";
 import { orders } from "../schema";
 import { users } from "../schema";
 import { products } from "../schema";
