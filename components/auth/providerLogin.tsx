@@ -24,7 +24,7 @@ const ProviderLogin = () => {
   };
 
   return (
-    <div className="flex items-start justify-center gap-2 flex-col">
+    <div className="flex items-start justify-center gap-2 w-full">
       <Button
         onClick={() => handleSignIn("google")}
         disabled={loading === "google"}

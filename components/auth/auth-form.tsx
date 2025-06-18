@@ -23,8 +23,8 @@ const AuthForm = ({
       <Card>
         <CardHeader>{formTitle}</CardHeader>
         <CardContent>{children}</CardContent>
-        <CardFooter>
-          {showProvider && <ProviderLogin />}
+        <CardFooter className="flex flex-col items-center justify-center space-y-4 w-full">
+          {/* {showProvider && <ProviderLogin />} */}
           <AuthFooter footerLabel={footerLabel} footerHref={footerHref} />
         </CardFooter>
       </Card>
