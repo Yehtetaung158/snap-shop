@@ -39,8 +39,8 @@ const TagFilter = () => {
     },
     {
       id: 5,
-      name: "Cover",
-      tag: "cover",
+      name: "Covers",
+      tag: "covers",
     },
   ];
   return (
